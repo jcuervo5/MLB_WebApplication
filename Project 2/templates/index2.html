@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MLB Player Lookup</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-red.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"> -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.min.js"></script> -->
+</head>
+
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+    <div class="w3-center">
+    <h4>Search for your favorite players</h4>
+    <h1 class="w3-xxxlarge w3-animate-bottom">MLB Player Lookup</h1>
+    <br><br>
+    </div>
+  </header>
+
+<body>
+<div class="w3-row-padding w3-center w3-margin-top">
+  <div class="w3-half">
+        <form id="form" class="w3-container w3-card-4" role="form" name="playerform">
+            <h2>Player Search</h2>
+            <div class="w3-section">
+            <label for="first_name">First Name</label>
+            <input class="w3-input" id="first_name" name="first_name" type="text" placeholder="First Name">
+            <label for="last_name">Last Name</label>
+            <input class="w3-input" id="last_name" name="last_name" type="text" placeholder="Last Name">
+            <br><br>
+          <button id="button" type="button" class="btn btn-default">Enter</button>
+        </div>
+        </form>
+      </div>
+    
+
+    <div class="w3-half">
+    <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Player Demographics</h3><br>
+        <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <ul></ul>
+      </div>
+    </div>
+  </div>
+
+
+<div class="w3-center"><br><br>
+    <h2>Traditional Statistics</h2>
+</div>
+
+<div class="w3-responsive w3-card-4">
+    <table class="w3-table w3-striped w3-bordered">
+            <thead id='stat_head'>
+            </thead>
+           <tbody id='stat_body'>
+           </tbody>
+          </table>
+     </div>
+    </div>
+  </div>    
+
+  <div class="w3-center">
+    <h2>Statcast Statistics</h2>
+</div>
+
+  <div class="w3-responsive w3-card-4">
+    <table class="w3-table w3-striped w3-bordered">
+            <thead id='statcast_head'>
+            </thead>
+           <tbody id='statcast_body'>
+           </tbody>
+          </table>
+     </div>
+    </div>
+  </div>   
+
+</body>
+<script src="static/js/app.js"></script>
+<script src="static/css/style.css"></script>
+
+
+</html>
